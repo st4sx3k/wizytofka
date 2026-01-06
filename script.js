@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
         status.textContent = "Wiadomość została wysłana ✔";
         status.style.color = "green";
         form.reset();
+        
     });
 });
 
