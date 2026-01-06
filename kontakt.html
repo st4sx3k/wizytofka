@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Stanisław Szyszka</h1>
+    <nav>
+        <a href="index.html">Start</a>
+        <a href="edukacja.html">Wykształcenie</a>
+        <a href="doswiadczenie.html">Doświadczenie</a>
+        <a href="zainteresowania.html">Zainteresowania</a>
+        <a href="kontakt.html">Kontakt</a>
+    </nav>
+</header>
+
+<main>
+    <h2>Kontakt</h2>
+
+    <form id="kontaktForm">
+        <label>
+            Email:
+            <input type="email" id="email" placeholder="twoj@email.com">
+        </label>
+
+        <label>
+            Wiadomość:
+            <textarea id="wiadomosc" rows="5" placeholder="Napisz wiadomość..."></textarea>
+        </label>
+
+        <button type="submit">Wyślij</button>
+        <p id="status"></p>
+    </form>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

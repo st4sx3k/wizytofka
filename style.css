@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    min-height: 100vh;
+}
+
+body {
+  background-image: url("./tlo1.png");
+  background-size: cover;        /* dopasowanie do ekranu */
+  background-position: center;   /* wyśrodkowanie */
+  background-repeat: no-repeat;  /* bez powtarzania */
+  min-height: 100vh;
+}
+
+header {
+    background: #1b1b1b;
+    color: #7ba7ee;
+    padding: 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: #334155;
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #1b1b1b;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    animation: fadeIn 0.6s ease-in-out;
+    color: white;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #7ba7ee;
+}
+
+p, li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+button:hover {
+    background: #1d4ed8;
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* === TO NA KONTAKT === */
+
+form#kontaktForm {
+    max-width: 500px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    color: white;
+}
+
+form input,
+form textarea {
+    margin-top: 6px;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    width: 100%;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    align-self: flex-start;
+    padding: 12px 28px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #1d4ed8;
+}
+
+#status {
+    font-weight: 600;
+}
